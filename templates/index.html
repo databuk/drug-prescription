@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drug Prescription App</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+    <div class="bot-container">
+        <form action="\predict" method="POST" class="bot-left">
+            <div class="bot-title">
+                <h2>Drug Prescription App</h2>
+                <hr>
+            </div>
+            <input type="text" name="condition" placeholder="What is your condition?" class=bot-input required>
+            <!-- <input type="submit" value="Predict"> -->
+            <button type="submit">Predict</button>
+            {% if predicted_drug %}
+            <div class="result">
+                <p><strong>You can take </strong> <b>{{predicted_drug}}</b></p>
+            </div>
+            {% endif %}
+
+        </form>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Outfit';
+    background: linear-gradient(#ffdad5, #fff7f9);
+}
+.bot-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.bot-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.bot-title h2{
+    font-weight: 600;
+    color: #a363aa;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+.bot-title hr{
+    border: none;
+    width: 450px;
+    height: 5px;
+    background-color: #a363aa;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.bot-input{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 30px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+
+}
+.bot-input:focus{
+    border: 1px solid #ff994f
+}
+.bot-input::placeholder{
+    color: #9a9a99;
+}
+.bot-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #ff994f, #fa6d86);
+}
+.result{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    color: #fa6d86;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+/* .bot-right{
+    width: 500px;
+} */
