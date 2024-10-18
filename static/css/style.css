@@ -69,6 +69,12 @@ body{
     justify-content: space-evenly;
     gap: 20px;
 }
+@media (max-width:800px){
+    .bot-container{
+        width: 90vw;
+        padding: 5vw;
+    }
+}
 /* .bot-right{
     width: 500px;
 } */
