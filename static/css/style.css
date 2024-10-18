@@ -71,7 +71,7 @@ body{
 }
 @media (max-width:800px){
     .bot-container{
-        width: 60vw;
+        width: 100vw;
         padding: 5vw;
     }
 }
